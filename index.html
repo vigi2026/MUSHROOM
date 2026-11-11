@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oyster Mushroom Farm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#shop">🍄 <span data-i18n="brand"></span></a>
+  <nav>
+    <a href="#shop" data-page="shop" data-i18n="n1"></a>
+    <a href="#benefits" data-page="benefits" data-i18n="n2"></a>
+    <a href="#grow" data-page="grow" data-i18n="n3"></a>
+  </nav>
+  <div class="lang"><button data-lang="en">EN</button><button data-lang="kn">ಕನ್ನಡ</button></div>
+</header>
+
+<main>
+<!-- PAGE 1 -->
+<section class="page" id="p-shop">
+  <div class="hero">
+    <div>
+      <span class="chip" data-i18n="tag"></span>
+      <h1 data-i18n="h1"></h1>
+      <p data-i18n="sub"></p>
+      <div class="rate"><span data-i18n="per"></span> <b id="baseRate"></b></div>
+    </div>
+    <div class="heroArt" id="heroArt"></div>
+  </div>
+
+  <div class="shop">
+    <div class="card">
+            <h3 data-i18n="wt"></h3>
+      <div class="grams" id="grams"></div>
+      <div class="total"><span data-i18n="tot"></span><strong id="price">₹150</strong></div>
+      <small id="sel"></small>
+    </div>
+    <div class="card" id="orderCard">
+      <h3 data-i18n="ord"></h3>
+      <label><span data-i18n="nm"></span><input id="name" autocomplete="name"></label>
+      <label><span data-i18n="mb"></span><input id="mobile" inputmode="numeric" maxlength="10" autocomplete="tel"></label>
+      <label><span data-i18n="ad"></span><textarea id="addr" rows="2"></textarea></label>
+      <p class="err" id="err"></p>
+      <a class="btn wa" id="send" href="#" target="_blank" rel="noopener">💬 <span data-i18n="wa"></span></a>
+    </div>
+  </div>
+  <a class="next" href="#benefits" data-i18n="next1"></a>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p-benefits">
+  <h2 data-i18n="bh"></h2>
+  <p class="lead" data-i18n="bs"></p>
+  <div class="grid" id="benefits"></div>
+  <div class="navrow"><a class="back" href="#shop" data-i18n="back"></a><a class="next" href="#grow" data-i18n="next2"></a></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p-grow">
+  <h2 data-i18n="gh"></h2>
+  <p class="lead" data-i18n="gs"></p>
+  <div class="steps" id="steps"></div>
+  <div class="card tip"><h3 data-i18n="tipH"></h3><p data-i18n="tipP"></p></div>
+  <div class="navrow"><a class="back" href="#benefits" data-i18n="back"></a><a class="next" href="#shop" data-i18n="next3"></a></div>
+</section>
+</main>
+<footer>© Oyster Mushroom Farm · 🍄</footer>
+<script src="script.js"></script>
+</body>
+</html>
